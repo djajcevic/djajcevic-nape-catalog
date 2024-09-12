@@ -34,3 +34,12 @@ activity:
         description: "The new employee has watched 'Data Protection and Privacy' video."
         test: "activity/onboarding-training/data-protection-and-privacy-lms-video.py"
         evidence: "evidence/lms-training/lms-training-video-data-protection.xml"
+  - name: github-mr
+    short: "GitHub MR Reviews"
+    description: "This activity verifies that the new employee has gone through onboarding training."
+    action:
+      - name: more-than-one-reviewer
+        short: "More than one reviewer"
+        description: "The MR has more than one reviewer"
+        test: "activity/github-mr/more-than-one-reviewers.py"
+        evidence: "evidence/github-mr/github-pr.json"
