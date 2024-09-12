@@ -25,3 +25,12 @@ activity:
         description: "The new employee has signed their compensation agreement."
         test: "activity/document-signatures/signed-compensation-agreement.py"
         evidence: "evidence/document-signatures/hrms-employee-onboarding.json"
+  - name: onboarding-training
+    short: "Onboarding Training"
+    description: "This activity verifies that the new employee has gone through onboarding training."
+    action:
+      - name: signed-compensation-agreement
+        short: "Watched Data Protection and Privacy"
+        description: "The new employee has watched 'Data Protection and Privacy' video."
+        test: "activity/onboarding-training/data-protection-and-privacy-lms-video.py"
+        evidence: "evidence/lms-training/lms-training-video-data-protection.xml"
